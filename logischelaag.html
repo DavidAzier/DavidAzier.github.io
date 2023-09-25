@@ -1,54 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-    <title>Computerarchitectuur</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Computerkennis</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Computerarchitectuur</h1>
-    <label for="architectuur">Kies een onderwerp:</label>
-    <select id="architectuur">
-        <option value="index">Home</option>
-        <option value="processor">Processor (CPU bestaat uit ALU en Control unit)</option>
-        <option value="taken">Taken van de processor</option>
-        <option value="werkgeheugen">Werkgeheugen (RAM/ROM)</option>
-        <option value="bus">Bus</option>
-        <option value="von_neumann">Von Neumann-architectuur</option>
-        <option value="moederbord">Moederbord</option>
-        <option value="soc">System-on-a-chip</option>
-        <option value="permanent_geheugen">Permanent geheugen/opslagmedia</option>
-        <option value="randapparatuur">Randapparatuur</option>
-        <option value="verbindingen">Verbindingen: kabels/interfaces</option>
-    </select>
-    <br><br>
-    <div id="onderwerp-inhoud">
-        <!-- Hier zal de inhoud van het geselecteerde onderwerp verschijnen -->
-    </div>
-
-    <script>
-        // JavaScript om de inhoud te laden wanneer een optie wordt geselecteerd
-        const architectuurDropdown = document.getElementById('architectuur');
-        const onderwerpInhoud = document.getElementById('onderwerp-inhoud');
-
-        architectuurDropdown.addEventListener('change', function() {
-            const geselecteerdOnderwerp = architectuurDropdown.value;
-            onderwerpInhoud.innerHTML = ''; // Leeg de huidige inhoud
-
-            // Voeg hier de inhoud toe voor elk onderwerp
-            switch (geselecteerdOnderwerp) {
-                case 'home':
-                    onderwerpInhoud.innerHTML = '<p>Dit is de startpagina.</p>';
-                    break;
-                case 'processor':
-                    onderwerpInhoud.innerHTML = '<p>De processor is...</p>';
-                    break;
-                case 'taken':
-                    onderwerpInhoud.innerHTML = '<p>De taken van de processor zijn...</p>';
-                    break;
-                // Voeg andere onderwerpen op dezelfde manier toe
-                default:
-                    onderwerpInhoud.innerHTML = '<p>Kies een onderwerp om meer te weten te komen.</p>';
-            }
-        });
-    </script>
+    <header>
+        <h1>Computerkennis</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="processor.html">Processor</a></li>
+            <li><a href="werkgeheugen.html">Werkgeheugen</a></li>
+            <li><a href="bus.html">Bus</a></li>
+            <li><a href="neumann.html">Von Neumann-architectuur</a></li>
+            <li><a href="moederbord.html">Moederbord</a></li>
+            <li><a href="systemonachip.html">System on a Chip</a></li>
+            <li><a href="permanentgeheugen.html">Permanent Geheugen</a></li>
+            <li><a href="randapparatuur.html">Randapparatuur</a></li>
+            <li><a href="verbindingen.html">Verbindingen</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Welkom bij Mijn Computerkennis</h2>
+        <p>Kies een onderwerp uit de lijst hierboven om meer te leren over computers en technologie.</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mijn Computerkennis</p>
+    </footer>
 </body>
 </html>
+
